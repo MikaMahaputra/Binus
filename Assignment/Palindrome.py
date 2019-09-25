@@ -22,6 +22,6 @@ word= str(input("Enter a word"))
 result= is_palindrome(word)
 
 if result:
-    print("Yes, it's a palindrome)
+    print("Yes, it's a palindrome")
 else:
     print("It's not a palindrome")
