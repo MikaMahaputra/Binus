@@ -7,7 +7,7 @@ Created on Wed Sep 25 11:46:58 2019
 
 import string
 def ignore_punctuation(word):
-    return "",join(letter.lower()for letter in word if letter in string.ascii_letters)
+    return "".join(letter.lower()for letter in word if letter in string.ascii_letters)
 def reverse(word):
     return word[::-1]
 def is_palindrome(word):
