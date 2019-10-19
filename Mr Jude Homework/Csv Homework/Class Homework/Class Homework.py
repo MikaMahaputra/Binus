@@ -48,7 +48,7 @@ class Customer():
         self.account = otherAccount
         
 firstCustomer = Customer("Erwin", "Rommel")
-print (firstCustomer.getFirstName(), firstCustomer.getLastName()) 
+print ("Welcome", firstCustomer.getFirstName(), firstCustomer.getLastName()) 
 
 class Bank():
     customers = []
