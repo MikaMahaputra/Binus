@@ -34,6 +34,7 @@ class Menu:
         print("New Staff")
         staff = Staff(self.data)
         self.data.append(f"{staff.id}#{staff.name}#{staff.position}#{staff.salary}\n")
+        print("Staff has been successfully added")
 
     def remove_staff(self):
         while True:
@@ -44,7 +45,7 @@ class Menu:
         staff_exists = len([row for row in self.data if row[:5] == id])
         if staff_exists:
             self.data = [row for row in self.data if row[:5] != id]
-            print("Data has been successfully deleted")
+            print("Staff has been successfully removed, how rude")
         else:
             print("Data Not Found")
 
@@ -101,6 +102,7 @@ class Menu:
             for row in self.data:
                 f.write(row)
             f.close()
+            print ("File has been saved")
 
 
 class Staff:
