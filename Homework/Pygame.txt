@@ -1,0 +1,66 @@
+Pygame Assignment
+Mika Mahaputra and Almada Putra
+1.	Pygame is an open source library used to multimedia applications such as games based on the SDL library, its source code can be modified.
+
+2.	A rectangle is a square shaped two dimensional object with four angles, it’s used to make a rectangle in Pygame.
+
+Sample Code:
+pygame.draw.rect(self.screen, (0,255,0), self.rect)
+
+3.	Yes, that’s possible
+
+Sample Code:
+pygame.mixer.music.load(“SongName.mp3”)
+pygame.mixer.music.play(1)
+
+4.	Sample Code:
+pygame.time.set_timer(“input a time here”)
+
+5.	Sprite is a 2D Game Object that is visible in game such as the player character, a sprite group is a collection of sprites.
+
+6.	Collision Detection is important because it detects when two object collides with each other, it is important for a game mechanic such as collecting powerups, getting hit by an enemy, and much more.
+
+Sample Code:
+def is_collided_with(self,sprite):
+	return self.rect.colliderect(sprite.rect)
+7.	Sample Code:
+avatar = pygame.image.load(“avatar.png”)
+display_surface.blit(avatar, (coordination))
+
+Blit is used to draw an image.
+
+8.	Sample Code:
+monsters= pygame.sprite.Group(mob1(), mob2(), mob3())
+monsters.update()
+monsters.draw()
+
+9. :l
+
+10.	 Game physics implements the law of physics into video games to make the effect more realistic to the player.
+
+Game physics are important in many games such as jumping in platformers, picking up and dropping objects, ragdolls in action games, vehicle simulation and many more, to provide much more realistic and natural reaction for the players.
+
+11.	 Sample Code:
+pygame.init()
+font = pygame.font.Font(“Font Name”,Size)
+text = font.render(“Text”,True,”Color”,”Color”)
+display_surface.blit(text,textrect)
+
+12.	 Sample Code:
+elif event.type == pygame.KEYDOWN:
+	If event.key == pygame.RIGHT:
+		self.ship.moving_right = True
+self.moving_right = False
+if self.moving_right and self.rect.right < self.screen_rect.right:
+	self.rect.x += 2
+
+13.	 Sample Code:
+pygame.init()
+self.screen = pygame.display.set_mode((800,600))
+self.screen.fill((color,color,color))
+
+14.	 Sample Code:
+self.rect.x = randint(0,self.screen_rect.right-self.rect.width)
+self.rect.y = randint(0,self.screen_rect.bottom-self.rect.height)
+
+15.	 Y
