@@ -17,6 +17,10 @@ pygame.mixer.music.play(1)
 pygame.time.set_timer(“input a time here”)
 
 5.	Sprite is a 2D Game Object that is visible in game such as the player character, a sprite group is a collection of sprites.
+	
+	Sample Code:
+	gems = pygame.sprite.Group()
+	gems.add(gem)
 
 6.	Collision Detection is important because it detects when two object collides with each other, it is important for a game mechanic such as collecting powerups, getting hit by an enemy, and much more.
 
